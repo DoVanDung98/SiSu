@@ -11,11 +11,13 @@
 `step1: git clone https://github.com/DoVanDung98/SiSu.git`  
 `step2: pip install -r requirements.txt`  
 `step3: download weight from my drive.  
-Link drive: https://drive.google.com/drive/u/0/folders/1WrniGZcVJDe0WjT02NadfyFUVLBjh2Bf`
+Link drive: https://drive.google.com/drive/u/0/folders/1WrniGZcVJDe0WjT02NadfyFUVLBjh2Bf`  
 `step4: python train.py`  
 `step5: python test.py`  
 
-I'll design jupyter notebook file. Can you use SiSu.ipynb for your target(train, val, test) model.  
+I'll design jupyter notebook file. Can you use SiSu.ipynb for your target(train, val, test) model.   
+
+You can test model and using file demo_sisu.py then demo SiSu  
 
 ## For example test SiSu:  
 `text = "This is the best movie I have ever seen!! The story is such a motivation"`  

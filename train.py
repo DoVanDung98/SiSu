@@ -93,5 +93,5 @@ for epoch in range(EPOCHS):
     history['val_loss'].append(val_loss)
 
     if val_acc > best_accuracy:
-        torch.save(model.state_dict(), 'xlnet_model.bin')
+        torch.save(model.state_dict(), 'train/xlnet_model.bin')
         best_accuracy = val_acc

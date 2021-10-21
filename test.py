@@ -4,7 +4,8 @@ from utils.device import device
 from dataloader import test_data_loader
 from eval import eval_model
 from dataloader import df_test
-
+import torch.nn.functional as F 
+from sklearn.metrics import classification_report
 model.load_state_dict(torch.load('weight/xlnet_model.bin'))
 
 test_acc, test_loss = eval_model(
@@ -29,7 +30,7 @@ def get_predictions(model, data_loader):
         for d in data_loader:
 
             texts = d["review_text"]
-            input_ids = d["input_ids"].reshape(4,512).to(device)
+            input_ids = d["input_ids"].reshape(1,512).to(device)
             attention_mask = d["attention_mask"].to(device)
             targets = d["targets"].to(device)
             
@@ -56,5 +57,5 @@ y_review_texts, y_pred, y_pred_probs, y_test = get_predictions(
   model,
   test_data_loader
 )
-
+class_names = ['Relationship','Spiritual']
 print(classification_report(y_test, y_pred, target_names=class_names))

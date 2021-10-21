@@ -11,7 +11,7 @@ def sentiment2label(category_1):
 df['category_2'] = df['category_2'].apply(sentiment2label)
 
 print(df['category_2'].value_counts())
-class_names = ['Spiritual', 'Relationship']
+class_names = ['Relationship','Spiritual']
 PRE_TRAINED_MODEL_NAME = 'xlnet-base-cased'
 tokenizer = XLNetTokenizer.from_pretrained(PRE_TRAINED_MODEL_NAME)
 
