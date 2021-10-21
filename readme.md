@@ -20,15 +20,17 @@ I'll design jupyter notebook file. Can you use SiSu.ipynb for your target(train,
 You can test model and using file demo_sisu.py then demo SiSu  
 
 ## For example test SiSu:  
-`text = "This is the best movie I have ever seen!! The story is such a motivation"`  
+`text = "text = "We all hear or read about the most difficult situations humans face, like the Holocaust. And we don’t really know how we would react and/or survive. When we face these personal questions of human limits"
+predict_sentiment(text)"`  
 
 `predict_sentiment(text)`
 
 ## Result:  
 
-`Spiritual score: 0.9981069564819336  
-Relationship score: 0.001893064472824335  
-SiSu text: This is the best movie I have ever  seen!! The story is such a motivation
-Sentiment  : Relationship`
+Spiritual score: 0.9981067180633545  
+Relationship score: 0.001893242821097374  
+SiSu text: We all hear or read about the most difficult situations humans face, like the Holocaust.  
+And we don’t really know how we would react and/or survive. When we face these personal questions of human limits  
+Sentiment  : Spiritual
 
 #### Created by: VanDung and MinhThy
